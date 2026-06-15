@@ -3,8 +3,8 @@ import logo from "../../assets/selecta-logo.png";
 
 const base =
   "flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium transition";
-const inactive = "text-slate-700 hover:bg-purple-100";
-const active = "bg-purple-700 text-white shadow";
+const inactive = "text-slate-700 hover:bg-brand-light";
+const active = "bg-brand text-white shadow";
 
 export default function Sidebar() {
   const navigate = useNavigate();
@@ -19,7 +19,7 @@ export default function Sidebar() {
       {/* New Chat */}
       <button
         onClick={() => navigate("/dashboard?new=1")}
-        className="mb-4 w-full bg-purple-700 hover:bg-purple-800 text-white rounded-lg py-2 text-sm font-semibold"
+        className="mb-4 w-full bg-brand hover:bg-brand-dark text-white rounded-lg py-2 text-sm font-semibold"
       >
         + New Chat
       </button>

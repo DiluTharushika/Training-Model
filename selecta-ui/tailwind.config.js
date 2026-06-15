@@ -4,11 +4,11 @@ export default {
     extend: {
       colors: {
         brand: {
-          700: "#5B2D90",  // purple close to your logo
-          800: "#4A237B",
-        },
-      },
-    },
+          DEFAULT: "#792CA2",
+          dark: "#67238A" // optional darker hover color
+        }
+      }
+    }
   },
-  plugins: [],
+  plugins: []
 };
