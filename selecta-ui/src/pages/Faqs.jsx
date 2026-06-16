@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 
-const FAQS = [
+export const FAQS = [
   {
     q: "What products does Selecta sell?",
     a: "Selecta Marketing sells a wide range of hardware tools and accessories including saw blades, hand saws, trowels, pliers, chisels, rivet guns, tapes, wheels/discs, spanners, paint tools, abrasives and drill bits.",
@@ -19,7 +19,7 @@ const FAQS = [
   },
 ];
 
-const CATALOG = [
+export const CATALOG = [
   { code: "2502", name: "SELECTA HACK SAW BLADE", category: "Saw Blades" },
   { code: "2504", name: "SELECTA HIGH SPEED BLADE NO.01", category: "Saw Blades" },
 
