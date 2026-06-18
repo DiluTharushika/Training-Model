@@ -4,13 +4,13 @@ const LanguageContext = createContext();
 
 const translations = {
   en: {
-    dashboard: "Dashboard",
-    trainingVideos: "Training Videos",
-    documentSearch: "Document Search",
-    imageLibrary: "Image Library",
-    faqs: "FAQs",
-    settings: "Settings",
-    newChat: "New Chat",
+    dashboard: "Overview",
+    trainingVideos: "Training Modules",
+    documentSearch: "Knowledge Base",
+    imageLibrary: "Asset Library",
+    faqs: "Support & FAQs",
+    settings: "Preferences",
+    newChat: "New Inquiry",
     online: "Online",
     searchPlaceholder: "Search internal resources...",
     askPrompt: "Ask questions, search internal knowledge, and generate responses.",
