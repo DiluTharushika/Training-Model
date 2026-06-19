@@ -1,5 +1,5 @@
 // Dynamically import all images from the Edited Product Photos directory using Vite's import.meta.glob
-const rawImages = import.meta.glob("../assets/Edited Product Photos/*.{png,jpg,jpeg,svg}", { eager: true });
+const rawImages = import.meta.glob("../assets/Edited Product Photos/*.{png,jpg,jpeg,svg}", { eager: true, query: '?url' });
 
 export const productImages = Object.entries(rawImages).map(([path, module]) => {
   const filename = path.split("/").pop();
@@ -48,7 +48,7 @@ export const productImages = Object.entries(rawImages).map(([path, module]) => {
     path,
     filename,
     name: cleanName || filename,
-    url: module.default,
+    url: typeof module === 'string' ? module : module?.default || module,
     category
   };
 });
